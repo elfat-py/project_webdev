@@ -1,0 +1,270 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Document</title>-->
+<!--    <link rel="stylesheet" href="style.css">-->
+<!--    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container-fluid">-->
+<!--    <div class="row no-gutters ">-->
+<!--        <div class="col-1">-->
+<!--            <div class="vertical-bar m-2"></div>-->
+<!--        </div>-->
+<!--        <div class="col m-2 p-0">-->
+<!--            <div class="dashboard">-->
+<!--                &lt;!&ndash;                    6 columns&ndash;&gt;-->
+<!--                &lt;!&ndash;                    3 columns for photos&ndash;&gt;-->
+<!--                &lt;!&ndash;                    column takes 1/3 space and other 2/3 of space&ndash;&gt;-->
+
+<!--                <div class="container-fluid text-center">-->
+<!--                    <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div> &lt;!&ndash; Growth, shares, value top &ndash;&gt;-->
+
+<!--                    <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column-wrapper">-->
+<!--                            <div class="col bg-primary">-->
+<!--                                <div class="p-3">Row column</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>&lt;!&ndash; Pie charts and top performers charts &ndash;&gt;-->
+
+<!--                    <div class="row g-2 g-lg-3">-->
+<!--                        <div class="col-4 m-0 p-2">-->
+<!--                            <div class="bg-primary">Column 1 (1/3 space)</div>-->
+<!--                        </div>-->
+
+<!--                        <div class="col-8 m-0 p-2">-->
+<!--                            <div class="bg-primary">Column 2 (2/3 space)</div>-->
+
+<!--                        </div>-->
+<!--                    </div>&lt;!&ndash; Expenses vs Growth chart and growth table &ndash;&gt;-->
+
+<!--                    <div class="row row-cols-1 row-cols-lg-1 g-2 g-lg-3">-->
+<!--                        <div class="col bg-primary m-2"></div>-->
+<!--                    </div>-->
+
+<!--                </div> &lt;!&ndash; Dashboard main container &ndash;&gt;-->
+<!--            </div>-->
+
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Include Bootstrap JS for utility classes &ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .vertical-bar {
+            height: 100vh; /* Full viewport height */
+            background-color: #007bff; /* Primary color */
+        }
+
+        .dashboard {
+            height: 100vh; /* Full viewport height */
+            background-color: red; /* Primary color */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bg-primary {
+            background-color: #007bff !important;
+            height: 100%; /* 25% of the height of the dashboard */
+        }
+
+        .column-wrapper {
+            padding: 10px;
+        }
+
+        .bg-wrapper {
+            background-color: #007bff; /* Custom background color */
+            color: white; /* Text color for better visibility */
+            height: 100%; /* Full height of the parent column */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="row mx-0">
+        <div class="col mb-3 mt-0">
+            <p class="bg-primary-subtle m-0 stock-header font-weight-bold">Stock Dashboard</p>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-1">
+            <div class="vertical-bar m-2"></div>
+        </div>
+        <div class="col m-2 p-0">
+            <div class="dashboard">
+                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 flex-grow-1 mb-3 mx-2">
+                    <div class="col">
+                        <div class="bg-primary">
+                            <div class="p-3 d-flex align-items-center justify-content-center">
+                                <p class="text-center m-0">Current Value <br> <span
+                                        class="font-weight-lighter">74K</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-primary">
+                            <div class="p-3 d-flex align-items-center justify-content-center">
+                                <p class="text-center m-0">Total shares <br> <span
+                                        class="font-weight-lighter">12,200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-primary">
+                            <div class="p-3 d-flex align-items-center justify-content-center">
+                                <p class="text-center m-0">Current Growth <br> <span
+                                        class="font-weight-lighter">6K</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-primary">
+                            <div class="p-3 d-flex align-items-center justify-content-center">
+                                <p class="text-center m-0">Monthly Growth <br> <span
+                                        class="font-weight-lighter">7%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-primary">
+                            <div class="p-3 d-flex align-items-center justify-content-center">
+                                <p class="text-center m-0">YTD Growth <br> <span class="font-weight-lighter">8.5%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-primary">
+                            <div class="p-3 d-flex align-items-center justify-content-center">
+                                <p class="text-center m-0"># Companies<br> <span class="font-weight-lighter">15</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Growth, shares, value top -->
+
+                <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3 flex-grow-1 mx-2">
+                    <div class="col h-90">
+                        <div class="bg-dark h-100">
+                            <div class="card w-100 ">
+                                <div class="card-body">
+                                    <p class="card-text">DOW vs NASQED</p>
+                                </div>
+                                <hr>
+                                <img src="src/pie1.png" class="card-img-bottom" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bg-dark">
+                            <div class="p-3">Row column</div>
+                        </div>
+                    </div>
+                    <div class="col h-90">
+                        <div class="bg-dark h-100">
+                            <div class="card w-100 ">
+                                <div class="card-body">
+                                    <p class="card-text">TECH VS BANKING VS OTHERS</p>
+                                </div>
+                                <hr>
+                                <img src="src/pie2.png" class="card-img-bottom" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Pie charts and top performers charts -->
+
+                <div class="row g-2 g-lg-3 flex-grow-1 mx-2">
+                    <div class="col-4 m-0 p-2">
+                        <div class="bg-info">Column 1 (1/3 space)</div>
+                    </div>
+                    <div class="col-8 m-0 p-2">
+                        <div class="bg-info">Column 2 (2/3 space)</div>
+                    </div>
+                </div><!-- Expenses vs Growth chart and growth table -->
+
+                <div class="row mx-0">
+                    <div class="col mb-3 mt-0">
+                        <div class="bg-primary-subtle m-2">Full width column</div>
+                    </div>
+                </div> <!-- Dashboard footer-->
+            </div> <!-- Dashboard main container -->
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS for utility classes -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
